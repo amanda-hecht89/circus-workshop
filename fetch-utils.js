@@ -41,3 +41,13 @@ export async function getWorkShops() {
     const response = await client.from('circus_classes').select('*, participant(*)');
     return response.data;
 }
+
+export async function createKid(participant) {
+    const response = await client.from('participant').insert(participant);
+    return response.data;
+}
+
+export async function deleteKid(id) {
+    const response = await client.from('participant').delete().eq('id', id);
+    return response.data;
+}

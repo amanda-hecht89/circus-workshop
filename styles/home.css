@@ -53,6 +53,9 @@ p {
     font-size: 25px;
 }
 
-#body1 {
-    background-color: aliceblue;
+#new-kid {
+    background-color: rgba(240, 248, 255, 0.309);
+    height: 75px;
+    width: 55%;
+    font-size: 25px;
 }
