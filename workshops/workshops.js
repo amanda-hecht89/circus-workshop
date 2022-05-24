@@ -17,12 +17,14 @@ async function displayWorkshops() {
         const circusEl = renderClasses(classes);
 
         const ul = document.createElement('ul');
-        for (let participant of classes.participant) {
+        for (let participants of classes.participant) {
             const li = document.createElement('li');
-            li.textContent = `${participant.name}: ${participant.contact}`;
+            li.textContent = `${participants.name}: ${participants.contact}`;
+            console.log('yep');
             li.addEventListener('click', async () => {
-                await deleteKid(participant.id);
-                await displayWorkshops();
+                console.log('hello');
+                await deleteKid(participants.id);
+                displayWorkshops();
             });
             ul.append(li);
         }
