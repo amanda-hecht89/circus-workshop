@@ -15,6 +15,10 @@
 
 }
 
+@keyframes strobe {
+
+}
+
 .image {
     position: relative;
     animation-name: jump;
@@ -29,4 +33,22 @@ p {
     background-color: rgba(240, 248, 255, 0.444);
     width: 60%;
     font-size: 20px;
+}
+
+.scary {
+    height: 200px;
+
+}
+
+#fun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.599);
+    width: 100%;
+}
+
+.para {
+    font-size: 25px;
 }

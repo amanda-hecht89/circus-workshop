@@ -15,7 +15,7 @@ export function checkAuth() {
 
 export function redirectIfLoggedIn() {
     if (getUser()) {
-        location.replace('./other-page');
+        location.replace('../add-person');
     }
 }
 
@@ -38,6 +38,6 @@ export async function logout() {
 }
 
 export async function getWorkShops() {
-    const response = await client.from('circus_classes').select('*, participants(*)');
+    const response = await client.from('circus_classes').select('*, participant(*)');
     return response.data;
 }
