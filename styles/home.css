@@ -26,9 +26,7 @@
 p {
     display: flex;
     justify-content: center;
-}
-
-.tramp {
-
-    
+    background-color: rgba(240, 248, 255, 0.444);
+    width: 60%;
+    font-size: 20px;
 }

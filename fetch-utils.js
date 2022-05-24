@@ -37,6 +37,7 @@ export async function logout() {
     return (window.location.href = '../');
 }
 
-// function checkError({ data, error }) {
-//     return error ? console.error(error) : data;
-// }
+export async function getWorkShops() {
+    const response = await client.from('circus_classes').select('*, participants(*)');
+    return response.data;
+}
