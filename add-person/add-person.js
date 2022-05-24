@@ -1,5 +1,5 @@
 import { renderOption } from '../render-utils.js';
-import { getWorkShops } from '../fetch-utils.js';
+import { getWorkShops, createKid } from '../fetch-utils.js';
 
 
 const classSelect = document.getElementById('classes');
@@ -13,4 +13,15 @@ async function onLoad() {
     }
 }
 onLoad();
+
+kidform.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = new FormData(kidform);
+    await createKid({
+        name: form.get('name'),
+        contact: form.get('contact'),
+        workshop_id: form.get('workshop_id'),
+    });
+    window.location.href = '/workshops';
+});
 
