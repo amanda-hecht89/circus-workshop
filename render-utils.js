@@ -1,8 +1,8 @@
-export function renderClasses(circus_classes) {
+export function renderClasses(classes) {
     const div = document.createElement('div');
     div.classList.add('classes');
     const h2 = document.createElement('h2');
-    h2.textContent = workshop.name;
+    h2.textContent = classes.name;
 
     div.append(h2);
 
