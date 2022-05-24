@@ -1,4 +1,5 @@
-/* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Fredoka+One&family=Press+Start+2P&family=Rubik+Puddles&family=The+Girl+Next+Door&display=swap');
+
 @keyframes jump {
     0% { bottom: 0% }
     10% { bottom: 15% }
