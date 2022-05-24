@@ -3,9 +3,9 @@ import { getWorkShops } from '../fetch-utils.js';
 
 
 const classSelect = document.getElementById('classes');
-const kidform = document.getElementById('new-kid')
+const kidform = document.getElementById('new-kid');
 
-async onLoad() {
+async function onLoad() {
     const workshops = await getWorkShops();
     for (let workshop of workshops) {
         const classOpt = renderOption(workshop);
