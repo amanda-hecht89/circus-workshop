@@ -1,15 +1,19 @@
-import { renderOption } from '../render-utils.js';
+import { renderOption, renderClasses } from '../render-utils.js';
 import { getWorkShops, createKid } from '../fetch-utils.js';
 
 
-const classSelect = document.getElementById('classes');
+const classSelect = document.getElementById('workshops');
+const more = document.getElementById('tellMe');
 const kidform = document.getElementById('new-kid');
 
 async function onLoad() {
     const workshops = await getWorkShops();
+    console.log(workshops);
     for (let workshop of workshops) {
         const classOpt = renderOption(workshop);
         classSelect.append(classOpt);
+        const classes = renderClasses(workshop);
+        more.append(classes);
     }
 }
 onLoad();
