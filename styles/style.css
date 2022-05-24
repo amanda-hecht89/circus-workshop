@@ -16,7 +16,7 @@ body {
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
-    --footer-height: 25px;
+    --footer-height: 200px;
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
@@ -59,7 +59,6 @@ h2 {
 }
 
 .gutter-right {
-    margin-right: 20px;
 }
 
 .main-logo {

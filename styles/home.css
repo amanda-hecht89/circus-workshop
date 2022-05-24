@@ -1,1 +1,33 @@
 /* add home page styles here */
+@keyframes jump {
+    0% { bottom: 0% }
+    10% { bottom: 15% }
+    20% { bottom: 25% }
+    30%  { bottom: 35% }
+    40%  { bottom: 45% }
+    50%  { bottom: 55% }
+    60%  { bottom: 45% }
+    70%  { bottom: 35% }
+    80%  { bottom: 25% }
+    90%  { bottom: 15% }
+    100% { bottom: 0% }
+
+}
+
+.image {
+    position: relative;
+    animation-name: jump;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.tramp {
+
+    
+}
