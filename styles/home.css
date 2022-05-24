@@ -52,3 +52,7 @@ p {
 .para {
     font-size: 25px;
 }
+
+#body1 {
+    background-color: aliceblue;
+}
