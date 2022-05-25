@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
@@ -16,9 +17,12 @@ body {
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
-    --footer-height: 25px;
+    --footer-height: 200px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
+    background-image: url("https://www.scrapbook.com/products/cache/SBC_re-eav-981_0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--color2);
 }
 
@@ -28,6 +32,9 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: rgba(240, 248, 255, 0.422);
+    width: 40%;
+    align-items: center;
 }
 
 section {
@@ -51,6 +58,10 @@ header {
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    background-color: rgb(199, 32, 32);
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Rubik Puddles', Times, serif;
 }
 
 h2 {
@@ -58,9 +69,6 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
@@ -73,7 +81,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -85,10 +93,10 @@ footer {
     box-shadow: var(--shadow);
 }
 
-  
-  @keyframes pulse {
+
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -97,13 +105,13 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+    }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+}
 
 #logout {
     position: fixed;

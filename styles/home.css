@@ -1,1 +1,60 @@
-/* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Fredoka+One&family=Press+Start+2P&family=Rubik+Puddles&family=The+Girl+Next+Door&display=swap');
+
+@keyframes jump {
+    0% { bottom: 0% }
+    10% { bottom: 15% }
+    20% { bottom: 25% }
+    30%  { bottom: 35% }
+    40%  { bottom: 45% }
+    50%  { bottom: 55% }
+    60%  { bottom: 45% }
+    70%  { bottom: 35% }
+    80%  { bottom: 25% }
+    90%  { bottom: 15% }
+    100% { bottom: 0% }
+
+}
+
+
+.image {
+    position: relative;
+    animation-name: jump;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.444);
+    width: 60%;
+    font-size: 25px;
+
+}
+
+.scary {
+    height: 200px;
+
+}
+
+#fun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.599);
+    width: 100%;
+}
+
+.para {
+    font-size: 25px;
+}
+
+#new-kid {
+    background-color: rgba(240, 248, 255, 0.309);
+    height: 75px;
+    width: 55%;
+    font-size: 25px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/home.css">
+        <title>Document</title>
+    </head>
+<body id="body1">
+    <h1>Sign Up For A Class Here!</h1>
+    <form id="new-kid">
+    <label for="name">First and Last Name <input type="text" name="name" /></label>
+    <label for="contact">Email address <input type="text" name="contact" /></label>
+    <select name="workshop_id" id="workshops"></select>
+    <button>Submit!</button>
+    </form>
+    <div id="tellMe"></div>
+</body>
+<script type="module" src="./add-person.js"></script>
+</html>
