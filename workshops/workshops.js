@@ -15,12 +15,12 @@ async function displayWorkshops() {
     const data = await getWorkShops();
     for (let classes of data) {
         const circusEl = renderClasses(classes);
-
+        console.log(classes);
         const ul = document.createElement('ul');
         for (let participants of classes.participant) {
             const li = document.createElement('li');
             li.textContent = `${participants.name}: ${participants.contact}`;
-            console.log('yep');
+            console.log('gjrieo');
             li.addEventListener('click', async () => {
                 console.log('hello');
                 await deleteKid(participants.id);
